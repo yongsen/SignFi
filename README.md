@@ -19,7 +19,7 @@ This repository contains the following files. You agree to the [Terms of Use for
 | [videos/](https://wm1693.box.com/s/ptdahj91p3uaxm49fz24b398xxzu7yl7) | This folder contains the videos for 276 basic sign words. These videos are used for the participant to learn and perform sign gestures during data collection. | 105.9MB |
 | [README.md](https://wm1693.box.com/s/jx4t4aeg5gm3xhnh8v5ooj7cr6qb3xgv) | Readme | 5KB |
 
-Both downlink and uplink CSI traces are included for the 276 sign words in the lab and home environments. Only downlink CSI traces are used in the paper. CSI traces are collected using the [802.11n CSI Tool](http://dhalperi.github.io/linux-80211n-csitool/). Please check the paper for more details about experiment setup, measurement procedure, WiFi settings, etc.
+Both downlink and uplink CSI traces are included for the 276 sign words in the lab and home environments. Only downlink CSI traces are used in the paper. CSI traces are collected using the <a href="http://dhalperi.github.io/linux-80211n-csitool/" target="_blank">802.11n CSI Tool</a>. Please check the paper for more details about experiment setup, measurement procedure, WiFi settings, etc.
 
 
 ## An Example
