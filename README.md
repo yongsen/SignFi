@@ -1,7 +1,10 @@
 This website contains datasets of Channel State Information (CSI) traces for sign language recognition using WiFi.
 
 ## Cite the Paper
-Yongsen Ma, Gang Zhou, Shuangquan Wang, Hongyang Zhao, and Woosub Jung. 2018. SignFi: Sign Language Recognition Using WiFi. Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. 2, 1, Article 23 (March 2018), 21 pages. DOI: [https://doi.org/10.1145/3191755](https://doi.org/10.1145/3191755)
+> Yongsen Ma, Gang Zhou, Shuangquan Wang, Hongyang Zhao, and Woosub Jung. 2018. SignFi: Sign Language Recognition Using WiFi. Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. 2, 1, Article 23 (March 2018), 21 pages. DOI: [https://doi.org/10.1145/3191755](https://doi.org/10.1145/3191755)
+
+Readers can also check the following paper for more details about WiFi sensing with Channel State Information.
+> Yongsen Ma, Gang Zhou, and Shuangquan Wang. 2019. WiFi Sensing with Channel State Information: A Survey. ACM Comput. Surv. 52, 3, Article 46 (June 2019), 36 pages. DOI: [https://doi.org/10.1145/3310194](https://doi.org/10.1145/3310194)
 
 
 ## Files
