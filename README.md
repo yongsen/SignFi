@@ -39,7 +39,7 @@ csi_tensor = [csi_abs,csi_ang];
 word = categorical(label);
 t0 = toc; % pre-processing time
 ```
-`tic` and `toc` are used to measure time consumption. The size of `csid_lab` is `size(csid_lab)=(200,30,3,5520)`. `csi_tensor` and `word` are the CSI input and labels.
+`tic` and `toc` are used to measure time consumption. The size of `csid_lab` is `size(csid_lab)=(200,30,3,5520)`. `csi_tensor` and `word` are the CSI input and labels. (Optional) Remove phase offset before feeding to neural network models. A reference of the code for removing phase offset can be found at [csi_phase_offset.py](./csi_phase_offset.py).
 
 2. Some parameter settings.
 ```matlab
