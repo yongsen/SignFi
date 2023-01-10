@@ -43,7 +43,9 @@ t0 = toc; % pre-processing time
 ````python
 from scipy.optimize import curve_fit
 
-# x (tx and subcarrier index) for curve fitting
+"""
+x (tx and subcarrier index) for curve fitting
+"""
 idx_tx_subc = np.zeros(shape=(2, 3, 3, 30))
 for tx in range(3):
     for rx in range(3):
