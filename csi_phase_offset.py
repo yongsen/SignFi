@@ -24,19 +24,19 @@ def remove_phase_offset(csi):
     phase = csi_ang[0, ...] # get phase offsets from the 1st packet
     for tx in range(csi_shape[1]): # tx
         for rx in range(csi_shape[2]): # rx
-            phase[tx, rx, :] = unwrap (phase[tx, rx, :])
+            phase[tx, rx, :] = unwrap(phase[tx, rx, :])
 
     phase = phase. flatten()
     popt, pcov = curve_fit(func, idx_tx_subc, phase)
 
     phase = func(idx_tx_subc, *popt)
-    phase = np.reshape (phase, (csi_shape(1),csi_shape [ 2 ], csi_shape [3]))
+    phase = np.reshape(phase, (csi_shape(1),csi_shape [ 2 ], csi_shape [3]))
 
     pdp = np.zeros(shape=csi_shape, dtype=np.complex)
     for t in range (csi_shape[0]): # time
         for tx in range(csi_shape[1]): # tx
             for rx in range(csi_shape[2]): # rx
-                csi_ang[t, tx, rx, :] = unwrap (csi_ang[t, tx, rx, :])
+                csi_ang[t, tx, rx, :] = unwrap(csi_ang[t, tx, rx, :])
                 csi_ang[t, tx, rx, :] -= phase[tx, rx, :]
 
                 csi_new = csi_abs[t, tx, rx, : ]*np.exp(1j*csi_ang[t, tx, rx, :])
