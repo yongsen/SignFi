@@ -40,7 +40,7 @@ word = categorical(label);
 t0 = toc; % pre-processing time
 ```
 `tic` and `toc` are used to measure time consumption. The size of `csid_lab` is `size(csid_lab)=(200,30,3,5520)`. `csi_tensor` and `word` are the CSI input and labels. (Optional) Remove phase offset before feeding to neural network models. A reference of the code for removing phase offset can be found at [csi_phase_offset.py](./csi_phase_offset.py).
-```python
+````python
 from scipy.optimize import curve_fit
 
 # x (tx and subcarrier index) for curve fitting
@@ -53,10 +53,10 @@ for tx in range(3):
 idx_tx_subc = np.reshape(idx_tx_subc, (2, 270))
 
 def func(x, a, b, c):
-    # Phase offsets function
-    # x[0]: transmit antenna index
-    # x[1]: subcarrier index
-
+    """ Phase offsets function
+    x[0]: transmit antenna index
+    x[1]: subcarrier index
+    """
     return a*x[0] *x[1] + b*x[1] + c
 
 def remove_phase_offset(csi):
@@ -85,7 +85,7 @@ def remove_phase_offset(csi):
                 csi_new = csi_abs[t, tx, rx, : ]*np.exp(1j*csi_ang[t, tx, rx, :])
                 pdp[t, tx,rx, :] = np.fft.ifft(csi_new)
     return csi_abs, csi_ang, pdp
-```
+````
 
 2. Some parameter settings.
 ```matlab
