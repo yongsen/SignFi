@@ -50,12 +50,10 @@ for tx in range(3):         # tx index
             idx_tx_subc[1, tx, rx, k] = -58 + 4*k # subcarrier index
 idx_tx_subc = np.reshape(idx_tx_subc, (2, 270))
 ```
-
 ```python
 def func(x, a, b, c): # Phase offsets function
     return a*x[0] *x[1] + b*x[1] + c # x[0]: transmit antenna index, x[1]: subcarrier index
 ```
-
 ```python
 def remove_phase_offset(csi):
     csi = np.array(csi)
